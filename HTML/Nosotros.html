@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ignacio Abellesen" content="Proyecto Final">
+    <title>UOM - Sobre Nosotros</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Style.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <style>
+        /* Estilos CRUCIALES para el Sticky Footer y evitar superposición del Header fijo */
+        html, body { height: 100%; }
+        body { padding-top: 100px; } /* Ajuste de padding-top elevado para compensar la altura del logo/navbar */
+        /* Si tienes más estilos CSS para el navbar, agrégalos aquí o en Style.css */
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center ms-3" href="../index.html">
+                    <img src="../image/logo-header-uom.png" alt="Logotipo Unión Obrera Metalúrgica" style="height: 73px; width: auto;" class="me-2">
+                    <strong class="me-1">Autogestión de Afiliados</strong>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                        <li class="nav-item mx-2"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link active" href="./Nosotros.html">Sobre Nosotros</a></li>
+                        
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarServicesDropdown">
+                                <li><a class="dropdown-item" href="./carnet.html">Carnet Digital</a></li>
+                                <li><a class="dropdown-item" href="./turnos.html">Turnos Médicos</a></li>
+                                <li><a class="dropdown-item" href="./actualizacion.html">Actualización de Datos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./consultorios.html">Consultorios</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Ingresar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container mb-4" style="margin-top:150px;">
+            <h4 class="mb-4 text-center">Nuestro Equipo de Trabajo</h4>
+            <div class="row justify-content-center g-4">
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="0">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-abellesen-ignacio.jpg" alt="Abellesen Ignacio"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color:#3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Abellesen Ignacio</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-gomez-luciano.jpg" alt="Gomez Luciano"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color: #3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Gomez Luciano</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-diaz-lucia.jpg" alt="Diaz Lucia"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color: #3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Diaz Lucia</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-facundo-elias.jpg" alt="Facundo Elias"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color: #3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Facundo Elias</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-farias-romano-carlos.jpg" alt="Farias Romano Carlos"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color: #3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Farias Romano Carlos</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="500">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-cativa-nahuel.jpg" alt="Cativa Nahuel"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color: #3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Cativa Nahuel</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="600">
+                    <div class="card card-equipo p-3 border-0 shadow-lg h-100">
+                        <img src="./image/equipo-juarez-luciana-pamela.jpg" alt="Juarez Luciana Pamela"
+                            style="width:110px; height:110px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.1);"
+                            onerror="this.style.display='none';this.parentElement.querySelector('.icono-persona').style.display='inline-block';">
+                        <i class="bi bi-person-circle icono-persona"
+                            style="font-size: 4rem; color: #3590ff; display:none;"></i>
+                        <h6 class="fw-bold mt-3 mb-0">Juarez Luciana Pamela</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <h2 class="text-center mb-5 fw-bold text-dark">Historia y Trayectoria 📜</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <div class="timeline-bs">
+
+                        <div class="timeline-item-bs" data-aos="fade-right" data-aos-delay="0">
+                            <div class="card shadow-sm border-0 p-3 bg-light">
+                                <h5 class="fw-bold text-dark mb-1">1943: Fundación de la UOM Nacional</h5>
+                                <p class="mb-0 text-secondary">Se establece la Unión Obrera Metalúrgica a nivel nacional, marcando el inicio formal de la defensa de los derechos de los trabajadores de la industria metalúrgica en el país.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item-bs" data-aos="fade-right" data-aos-delay="100">
+                            <div class="card shadow-sm border-0 p-3 bg-light">
+                                <h5 class="fw-bold text-dark mb-1">1955: Creación de Nuestra Seccional</h5>
+                                <p class="mb-0 text-secondary">Con el crecimiento del sector en la región, se funda la Seccional [Tu Provincia/Ciudad], logrando una representación directa para los afiliados locales.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item-bs" data-aos="fade-right" data-aos-delay="200">
+                            <div class="card shadow-sm border-0 p-3 bg-light">
+                                <h5 class="fw-bold text-dark mb-1">1970: Adquisición de la Sede Social</h5>
+                                <p class="mb-0 text-secondary">Se inaugura la primera sede propia de la seccional, un espacio vital para la atención al afiliado, reuniones gremiales y servicios de capacitación.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item-bs" data-aos="fade-right" data-aos-delay="300">
+                            <div class="card shadow-sm border-0 p-3 bg-light">
+                                <h5 class="fw-bold text-dark mb-1">1995: Negociación del CCT 260/75</h5>
+                                <p class="mb-0 text-secondary">Participación activa en la renegociación del Convenio Colectivo de Trabajo (CCT), logrando importantes mejoras en salarios, condiciones de trabajo y seguridad laboral.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item-bs" data-aos="fade-right" data-aos-delay="400">
+                            <div class="card shadow-sm border-0 p-3 bg-light">
+                                <h5 class="fw-bold text-dark mb-1">2023: Lanzamiento de la Autogestión Digital</h5>
+                                <p class="mb-0 text-secondary">Dando un paso hacia el futuro, lanzamos esta plataforma web de Autogestión de Afiliados, modernizando la comunicación y simplificando todos los trámites digitales.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Ingreso de Afiliados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-center text-muted small">Ingresa tu nombre de afiliado y contraseña para acceder a los servicios.</p>
+                    <form id="loginForm" action="./dashboard.html" method="POST"> 
+                        <div class="mb-3">
+                            <label for="afiliado" class="form-label">Nombre de Afiliado</label>
+                            <input type="text" class="form-control" id="afiliado" name="afiliado" placeholder="Ingresa tu nombre de afiliado" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">INGRESAR</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="mb-1 small"><a href="./recuperar_pass.html" class="text-secondary text-decoration-none">¿Olvidaste tu contraseña?</a></p>
+                        <p class="mb-0 small">¿No tienes cuenta? <a href="./crear_cuenta.html" class="text-primary fw-bold text-decoration-none">Regístrate aquí</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="mt-auto py-4 bg-dark text-white"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3"> <h6 class="mb-1 fw-bold">Autogestión de Afiliados</h6> 
+                    <p class="small mb-1">UOM (UNIÓN OBRERA METALÚRGICA)</p>
+                    <h6 class="mt-3 mb-2">Síguenos en Nuestras Redes</h6> <div class="d-flex fs-4">
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3"> <h6 class="fw-bold mb-2">Navegación</h6>
+                    <ul class="list-unstyled small"> 
+                        <li><a href="../index.html" class="text-white-50">Inicio</a></li>
+                        <li><a href="./Nosotros.html" class="text-white-50">Acerca de Nosotros</a></li>
+                        <li><a href="./mision.html" class="text-white-50">Misión y Objetivos</a></li>
+                        <li><a href="./consultorios.html" class="text-white-50">Consultorios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3"> <h6 class="fw-bold mb-2">Portal de Servicios</h6>
+                    <ul class="list-unstyled small"> 
+                        <li><a href="./turnos.html" class="text-white-50">Turnos Médicos</a></li>
+                        <li><a href="./carnet.html" class="text-white-50">Carnet Digital</a></li>
+                        <li><a href="./actualizacion.html" class="text-white-50">Actualización de Datos</a></li>
+                        <li><a href="./contacto.html" class="text-white-50">Contacto y Ayuda</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3 border-top pt-3">
+                <small>© UOM - 2025 - Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({ duration: 1200 }); // Inicializa AOS
+        
+        // Función de Scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 40) {    
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Función de Login (maneja el envío del formulario en el Modal)
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.getElementById('loginForm');
+            if (loginForm) { 
+                loginForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    var nombre = document.getElementById('afiliado').value.trim();
+                    var pass = document.getElementById('contraseña').value.trim();
+                    
+                    if (nombre && pass) {
+                        var modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                        modal.hide();
+                        // Redirecciona al Dashboard DESPUÉS de cerrar el modal
+                        setTimeout(function(){
+                            window.location.href = "./dashboard.html"; // RUTA CORREGIDA: Asume dashboard.html está en HTML/
+                        }, 500);
+                    } else {
+                        alert('Por favor, completa ambos campos.');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

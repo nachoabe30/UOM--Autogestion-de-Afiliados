@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ignacio Abellesen" content="Proyecto Final">
+    <title>UOM - Portal de Autogestión de Afiliados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+    <body class="d-flex flex-column h-100">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center ms-3" href="./index.html">
+    <img src="./image/logo-header-uom.png" alt="Logotipo Unión Obrera Metalúrgica" style="height: 73px; width: auto;" class="me-2">
+    <strong class="me-1">Autogestión de Afiliados</strong>
+</a>
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+  <li class="nav-item mx-2">
+      <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+  </li>
+  <li class="nav-item mx-2">
+      <a class="nav-link" href="./HTML/Nosotros.html">Sobre Nosotros</a>
+  </li>
+  <li class="nav-item dropdown mx-2">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Servicios
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarServicesDropdown">
+          <li><a class="dropdown-item" href="./HTML/carnet.html">Carnet Digital</a></li>
+          <li><a class="dropdown-item" href="./HTML/turnos.html">Turnos Médicos</a></li>
+          <li><a class="dropdown-item" href="./HTML/actualizacion.html">Actualización de Datos</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="./HTML/consultorios.html">Consultorios</a></li>
+          <li><a class="dropdown-item" href="./HTML/contacto.html">Contacto</a></li>
+      </ul>
+  </li>
+</ul>
+<div class="d-flex ms-3">
+    <a class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Ingresar
+    </a>
+</div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-shrink-0">
+
+<!-- Sección de presentación amplia, card gris claro, sombra, animación AOS -->
+<section class="container my-5" style="max-width: 100%;">
+  <div 
+    class="row g-0 align-items-center bg-light rounded shadow-lg p-4" 
+    style="min-height: 320px;"
+    data-aos="fade-up" 
+    data-aos-duration="1200"
+  >
+    <!-- Card de descripción gris claro -->
+    <div class="col-lg-5 col-md-6 mb-3 mb-md-0 d-flex flex-column justify-content-center">
+      <div 
+        class="rounded shadow-lg p-4 mb-3 bg-light text-dark" 
+        style="box-shadow: 0 8px 30px -8px #878787;">
+        <h5 class="mb-2">Bienvenido a UOM</h5>
+        <p class="mb-0">Accedé a tus servicios médicos, credencial digital y mucho más en el portal exclusivo para afiliados de la Unión Obrera Metalúrgica.</p>
+      </div>
+      <div class="d-flex gap-2">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+          Ingresar
+        </button>
+        <a href="./HTML/error404.html" class="btn btn-outline-primary">Mis servicios</a>
+      </div>
+    </div>
+    <!-- Imagen principal médica -->
+    <div class="col-lg-7 col-md-6 text-center">
+      <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg" 
+        alt="Servicios médicos UOM" 
+        class="img-fluid rounded shadow-lg" 
+        style="max-height: 300px; width: 96%; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+  <section id="servicios-uom" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-down">NUESTROS SERVICIOS PARA TU BIENESTAR</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <i class="bi bi-person-badge-fill text-primary" style="font-size: 3rem;"></i>
+          <h5>Carnet Digital</h5>
+          <p class="small">Accede a tu credencial de afiliado y la de tu grupo familiar.</p>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-calendar-check-fill text-success" style="font-size: 3rem;"></i>
+          <h5>Turnos Médicos</h5>
+          <p class="small">Solicita, consulta y gestiona tus citas con especialistas.</p>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <i class="bi bi-hospital-fill text-warning" style="font-size: 3rem;"></i>
+          <h5>Consultorios</h5>
+          <p class="small">Encuentra información y ubicación de nuestros centros de salud.</p>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <i class="bi bi-gear-fill text-info" style="font-size: 3rem;"></i>
+          <h5>Actualización de Datos</h5>
+          <p class="small">Mantén tu información personal y familiar al día con la UOM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="container mt-0 mb-5" style="margin-top: 0px; margin-bottom: 40px;">
+  <h3 
+    class="text-center mb-5"
+    style="letter-spacing:2px;"
+    data-aos="fade-down"
+    data-aos-duration="800"
+  >ACERCA DE NOSOTROS</h3>
+  <div class="row justify-content-center g-4">
+    <!-- Misión -->
+    <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+      <div class="rounded-4 shadow-lg p-4 h-100"
+           style="background: rgba(53, 144, 255, 0.18); backdrop-filter: blur(2px); border: 1.5px solid #3590ff33;">
+        <h5 class="text-center fw-bold mb-4" style="letter-spacing:1px;">MISIÓN</h5>
+        <div class="border rounded-3 p-3" style="background: rgba(255,255,255,0.7);">
+          <span class="d-block text-center text-dark">Brindar protección, apoyo y beneficios a nuestros afiliados y sus familias, promoviendo el bienestar integral, el acceso a servicios médicos de calidad, la defensa de los derechos laborales y el fortalecimiento de la solidaridad dentro de la comunidad metalúrgica.</span>
+        </div>
+      </div>
+    </div>
+    <!-- Objetivos -->
+    <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000">
+      <div class="rounded-4 shadow-lg p-4 h-100"
+           style="background: rgba(46, 200, 190, 0.18); backdrop-filter: blur(2px); border: 1.5px solid #2ec8be33;">
+        <h5 class="text-center fw-bold mb-4" style="letter-spacing:1px;">OBJETIVOS</h5>
+        <div class="border rounded-3 p-3" style="background: rgba(255,255,255,0.7);">
+          <span class="d-block text-center text-dark">Desarrollar y mejorar los programas de salud y servicios sociales; fomentar la capacitación y la formación profesional continua de nuestros afiliados; impulsar la promoción de políticas de inclusión y bienestar; y garantizar la representación activa y eficiente de los intereses del sector metalúrgico.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container mb-5">
+  <h3 class="text-center mb-5" style="letter-spacing:2px; font-family: 'Montserrat', Arial, sans-serif;" data-aos="fade-down" data-aos-duration="800">
+    NUESTRA UBICACIÓN
+  </h3>
+  <div class="row justify-content-center g-4 align-items-stretch">
+    <!-- Datos de Ubicación y Comunicación -->
+    <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+      <div class="border rounded-4 shadow-lg p-4 h-100 bg-white">
+<div class="border rounded-4 shadow-lg p-4 bg-white font-descriptivo w-100 h-100" style="font-size: 1.05rem; font-family:'Montserrat', Arial, sans-serif;">
+  <p class="mb-3"><strong>Dirección:</strong> Junín 740, San Miguel de Tucumán, Tucumán</p>
+  <p class="mb-3"><strong>Teléfono:</strong> 0381 431-1405</p>
+  <p class="mb-3"><strong>Entidad:</strong> Unión Obrera Metalúrgica</p>
+  <p class="mb-3"><strong>Email:</strong> admiuomcapital@gmail.com</p>
+  <p class="mb-0"><strong>Horario de atención:</strong> Lunes a Viernes de 9 a 17 hs.</p>
+</div>
+      </div>
+    </div>
+    <!-- Mapa Google Maps -->
+    <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000">
+      <div class="border rounded-4 shadow-lg p-4 h-100 bg-white d-flex align-items-center">
+        <div style="width: 100%;">
+          <!-- Google Maps embed de Junín 740, San Miguel de Tucumán, Tucumán -->
+          <iframe 
+            src="https://www.google.com/maps?q=Junín+740,+San+Miguel+de+Tucumán,+Tucumán,+Argentina&output=embed"
+            width="100%" height="320" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Modal de Ingreso de Afiliados -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Ingreso de Afiliados</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p class="text-center text-muted small">Ingresa tu nombre de afiliado y contraseña para acceder a los servicios.</p>
+        <form id="loginForm" action="dashboard.html" method="POST">
+          <div class="mb-3">
+            <label for="afiliado" class="form-label">Nombre de Afiliado</label>
+            <input type="text" class="form-control" id="afiliado" name="afiliado" placeholder="Ingresa tu nombre de afiliado" required>
+          </div>
+          <div class="mb-4">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">INGRESAR</button>
+          </div>
+        </form>
+        <div class="text-center mt-3">
+          <p class="mb-1 small"><a href="recuperar_pass.html" class="text-secondary text-decoration-none">¿Olvidaste tu contraseña?</a></p>
+          <p class="mb-0 small">¿No tienes cuenta? <a href="./HTML/crear_cuenta.html" class="text-primary fw-bold text-decoration-none">Regístrate aquí</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="mt-auto py-4 bg-dark text-white"> 
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 mb-3"> <h6 class="mb-1 fw-bold">Autogestión de Afiliados</h6> 
+                <p class="small mb-1">UOM (UNIÓN OBRERA METALÚRGICA)</p>
+                <h6 class="mt-3 mb-2">Síguenos en Nuestras Redes</h6> <div class="d-flex fs-4">
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3"> <h6 class="fw-bold mb-2">Navegación</h6>
+                <ul class="list-unstyled small"> <li><a href="./index.html" class="text-white-50">Inicio</a></li>
+                    <li><a href="./HTML/Nosotros.html" class="text-white-50">Acerca de Nosotros</a></li>
+                    <li><a href="./HTML/mision.html" class="text-white-50">Misión y Objetivos</a></li>
+                    <li><a href="./HTML/consultorios.html" class="text-white-50">Consultorios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-3"> <h6 class="fw-bold mb-2">Portal de Servicios</h6>
+                <ul class="list-unstyled small"> <li><a href="./HTML/turnos.html" class="text-white-50">Turnos Médicos</a></li>
+                    <li><a href="./HTML/carnet.html" class="text-white-50">Carnet Digital</a></li>
+                    <li><a href="./HTML/actualizacion.html" class="text-white-50">Actualización de Datos</a></li>
+                    <li><a href="./HTML/contacto.html" class="text-white-50">Contacto y Ayuda</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-center mt-3 border-top pt-3">
+            <small>© UOM - 2025 - Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duración de la animación en milisegundos
+        });
+    </script>
+</body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var loginForm = document.getElementById('loginForm');
+  loginForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // evita envío tradicional
+    var nombre = document.getElementById('afiliado').value.trim();
+    var pass = document.getElementById('contraseña').value.trim();
+    if (nombre && pass) {
+      var modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+      modal.hide();
+      // Redirecciona al index DESPUÉS de cerrar el modal
+      setTimeout(function(){
+        window.location.href = "index.html";
+      }, 500);
+    } else {
+      alert('Por favor, completa ambos campos.');
+    }
+  });
+});
+</script>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 40) {       // Cambia el número para ajustar sensibilidad
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</html>

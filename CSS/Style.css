@@ -1,0 +1,105 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.navbar.scrolled {
+  opacity: 0.65;           /* Desvanecido */
+  transition: opacity 0.35s;
+}
+
+.navbar {
+  opacity: 1;
+  transition: opacity 0.35s;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.00rem;
+  /* Puedes ajustar a 1.2rem si los querés aún más grandes */
+  letter-spacing: 0.3px;
+}
+
+/* CSS para la Línea de Tiempo de UOM (Mínimo necesario) */
+.timeline-bs {
+    border-left: 3px solid #0d6efd; /* Línea vertical azul de Bootstrap */
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.timeline-item-bs {
+    position: relative;
+    margin-left: 20px; /* Separación de la línea */
+    margin-bottom: 30px;
+}
+
+/* El círculo/punto en la línea */
+.timeline-item-bs::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0d6efd; /* Color azul primario de Bootstrap */
+    border: 3px solid #e9f2ff; /* Un azul muy claro como borde */
+    left: -35px; /* Ajusta la posición sobre la línea vertical */
+    top: 10px;
+    z-index: 1;
+}
+
+/* 1. Estilo inicial (Cuando la página está arriba, sin scroll) */
+.navbar {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease; /* Para una transición suave */
+    /* Aquí se mantiene tu estilo oscuro, bg-dark */
+}
+
+/* 2. Estilo al hacer scroll (Clase activada por JS) */
+.navbar.scrolled {
+    /* Opción A: Fondo más transparente (difuminado) */
+    background-color: rgba(33, 37, 41, 0.9) !important; /* Mismo color bg-dark pero con 90% de opacidad */
+    
+    /* Opción B: Fondo blanco semi-transparente (si la quieres hacer clara al scrollear) */
+    /* background-color: rgba(255, 255, 255, 0.9) !important; */ 
+    /* color: #000 !important; */
+    
+    /* Agrega una sombra sutil para distinguirla del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* CSS para neutralizar el efecto hover del botón de usuario en el Navbar */
+
+/* 1. Define el estilo para el botón de usuario en estado normal */
+.navbar .btn-outline-light {
+    /* Opcional: Aseguramos que el texto sea claro */
+    color: #f8f9fa !important; 
+    /* Opcional: Aseguramos que el borde sea claro */
+    border-color: #f8f9fa !important; 
+}
+
+/* 2. Define el estilo para el botón de usuario al pasar el cursor (:hover) */
+/* Esto SOBREESCRIBE el comportamiento predeterminado de Bootstrap */
+.navbar .btn-outline-light:hover {
+    /* Fondo: Usamos el color de fondo de la navbar (dark) para que no cambie */
+    background-color: #212529 !important; 
+    /* Borde: Lo mantenemos claro o ligeramente más oscuro */
+    border-color: #adb5bd !important; 
+    /* Texto: Lo mantenemos claro */
+    color: #f8f9fa !important;
+}
+
+/* 3. Define el estilo para el botón de usuario al estar activo (desplegado) */
+.navbar .btn-outline-light:focus,
+.navbar .btn-outline-light:active {
+    /* Se aplica el mismo estilo hover si el botón está pulsado */
+    background-color: #212529 !important; 
+    border-color: #adb5bd !important; 
+    color: #f8f9fa !important;
+}
+
+

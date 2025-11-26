@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOM - Contacto y Ayuda</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Style.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <style>
+        html, body { height: 100%; }
+        body { padding-top: 100px; background-color: #f0f2f5; } 
+        
+        .contact-info-card {
+            border-left: 4px solid #0d6efd;
+            transition: transform 0.3s;
+        }
+        .contact-info-card:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center ms-3" href="../index.html">
+                <img src="../image/logo-header-uom.png" alt="Logotipo Unión Obrera Metalúrgica" style="height: 73px; width: auto;" class="me-2">
+                <strong class="me-1">Autogestión de Afiliados</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item mx-2"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="./Nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarServicesDropdown">
+                            <li><a class="dropdown-item" href="./carnet.html">Carnet Digital</a></li>
+                            <li><a class="dropdown-item" href="./turnos.html">Turnos Médicos</a></li>
+                            <li><a class="dropdown-item" href="./actualizacion.html">Actualización de Datos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./consultorios.html">Consultorios</a></li>
+                            <li><a class="dropdown-item active" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Ingresar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main class="flex-shrink-0">
+    <section class="container py-5 mt-4">
+        <h2 class="text-center mb-5 fw-bold text-primary" data-aos="fade-down">
+            <i class="bi bi-envelope-paper-fill me-2"></i> Canales de Atención
+        </h2>
+        
+        <div class="row g-5">
+            
+            <div class="col-lg-7" data-aos="fade-right">
+                <div class="card shadow-lg p-4 bg-white">
+                    <h4 class="mb-3">Envíanos tu Consulta</h4>
+                    <p class="text-muted small mb-4">Completa el formulario y derivaremos tu mensaje al área correspondiente (Afiliaciones, Consultorios o Administración).</p>
+                    
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="afiliado_n" class="form-label">N° Afiliado (Opcional)</label>
+                                <input type="text" class="form-control" id="afiliado_n">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Motivo de la Consulta</label>
+                            <select class="form-select" id="asunto" required>
+                                <option value="" selected disabled>Seleccionar Área...</option>
+                                <option value="turnos">Problemas con Turnos Médicos</option>
+                                <option value="carnet">Carnet / Afiliaciones</option>
+                                <option value="gremial">Consulta Gremial</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5" data-aos="fade-left">
+                
+                <h4 class="mb-4">Información Directa</h4>
+                
+                <div class="card shadow-sm p-3 mb-3 bg-white contact-info-card">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-3 rounded-circle me-3">
+                            <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Sede Central</h6>
+                            <p class="mb-0 small text-muted">Junín 740, San Miguel de Tucumán</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm p-3 mb-3 bg-white contact-info-card">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-3 rounded-circle me-3">
+                            <i class="bi bi-telephone-fill text-success fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Atención Telefónica</h6>
+                            <p class="mb-0 small text-muted">0381 431-1405 (Lun a Vie 9-17hs)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm p-3 mb-4 bg-white contact-info-card">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-3 rounded-circle me-3">
+                            <i class="bi bi-envelope-fill text-danger fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Correo Electrónico</h6>
+                            <p class="mb-0 small text-muted">admiuomcapital@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mb-3 mt-2"><i class="bi bi-question-circle me-2"></i> Preguntas Frecuentes</h5>
+                <div class="accordion shadow-sm" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                ¿Cómo obtengo mi carnet digital?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body small">
+                                Ingresa al portal con tu usuario, ve a la sección <strong>Servicios > Carnet Digital</strong> y podrás descargarlo en PDF.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Cómo sacar turno médico?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body small">
+                                Ve a <strong>Servicios > Turnos Médicos</strong>, selecciona la especialidad, el profesional y la fecha deseada.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="mt-auto py-4 bg-dark text-white"> 
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 mb-3"> 
+                <h6 class="mb-1 fw-bold">Autogestión de Afiliados</h6> 
+                <p class="small mb-1">UOM (UNIÓN OBRERA METALÚRGICA)</p>
+                <h6 class="mt-3 mb-2">Síguenos en Nuestras Redes</h6> 
+                <div class="d-flex fs-4">
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3"> 
+                <h6 class="fw-bold mb-2">Navegación</h6>
+                <ul class="list-unstyled small"> 
+                    <li><a href="../index.html" class="text-white-50">Inicio</a></li>
+                    <li><a href="./Nosotros.html" class="text-white-50">Acerca de Nosotros</a></li>
+                    <li><a href="./mision.html" class="text-white-50">Misión y Objetivos</a></li>
+                    <li><a href="./consultorios.html" class="text-white-50">Consultorios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-3"> 
+                <h6 class="fw-bold mb-2">Portal de Servicios</h6>
+                <ul class="list-unstyled small"> 
+                    <li><a href="./turnos.html" class="text-white-50">Turnos Médicos</a></li>
+                    <li><a href="./carnet.html" class="text-white-50">Carnet Digital</a></li>
+                    <li><a href="./actualizacion.html" class="text-white-50">Actualización de Datos</a></li>
+                    <li><a href="./contacto.html" class="text-white-50">Contacto y Ayuda</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-center mt-3 border-top pt-3">
+            <small>© UOM - 2025 - Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Ingreso de Afiliados</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p class="text-center text-muted small">Ingresa tu nombre de afiliado y contraseña para acceder a los servicios.</p>
+                <form id="loginForm" action="./dashboard.html" method="POST">
+                    <div class="mb-3">
+                        <label for="afiliado" class="form-label">Nombre de Afiliado</label>
+                        <input type="text" class="form-control" id="afiliado" name="afiliado" placeholder="Ingresa tu nombre de afiliado" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">INGRESAR</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <p class="mb-1 small"><a href="./recuperar_pass.html" class="text-secondary text-decoration-none">¿Olvidaste tu contraseña?</a></p>
+                    <p class="mb-0 small">¿No tienes cuenta? 
+                        <a href="./crear_cuenta.html" class="text-primary fw-bold text-decoration-none">
+                            Regístrate aquí
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({ duration: 1000 }); 
+    
+    // Scroll Navbar
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 40) {    
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Login Script
+    document.addEventListener('DOMContentLoaded', function () {
+        var loginForm = document.getElementById('loginForm');
+        if (loginForm) {
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                var nombre = document.getElementById('afiliado').value.trim();
+                var pass = document.getElementById('contraseña').value.trim();
+                if (nombre && pass) {
+                    var modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                    modal.hide();
+                    setTimeout(function(){
+                        window.location.href = "./dashboard.html"; 
+                    }, 500);
+                } else {
+                    alert('Por favor, completa ambos campos.');
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
